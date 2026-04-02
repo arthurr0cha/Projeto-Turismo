@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+:root {
+    --clarissimo: #E0F2F1;
+    --claro: #80CBC4;
+    --base: #26A69A;
+    --escuro: #00796B;
+    --profundo: #004D40; 
+}
+
+*{
+    margin-bottom: 0!important;
+    padding: 0;
+
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, var(--claro), var(--profundo));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--claro), var(--base));
+    text-align: center;
+    padding: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+header h1 {
+    color: var(--clarissimo);
+    font-size: 80px;
+}
+
+header p {
+    color: var(--profundo);
+    font-size: 25px;
+}
+
+main {
+    margin: 0px;
+}
+
+.praias {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10em;
+}
+
+.esquerda {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--clarissimo);
+    font-size: 50px;
+    letter-spacing: 0.3em;
+}
+
+.meio {
+    text-align: center;
+}
+
+.seta {
+    margin-top: 0.5em;
+}
+
+.porto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin-left: 3em;
+}
+
+.porto img {
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.subtitulo {
+    font-size: 23px;
+    margin-bottom: 1em;
+    color: var(--escuro);
+    text-align: center;
+}
+
+.informacoes {
+    font-weight: 400;
+    text-indent: 15px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 2em;
+    margin-top: -142px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 67px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.pipa {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.pipa img {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.subtitulo {
+    color: var(--escuro);
+    text-align: center;
+}
+
+.jericoacoara {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.jericoacoara img {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.itacare {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+}
+
+.itacare img {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 1.5em;
+}
+
+footer {
+    display: flex;
+    align-items: flex-start;
+    margin: 1em;
+    margin-left: 38em;
+    margin-right: 32.5em;
+}
+
+footer > p > a {
+    padding: 0.3em;
+    margin-left: 15em;
+}
+
+footer > p {
+    text-align: center;
+    text-align: justify;
+    padding: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.473);
+    border-radius: 5px;
+}
+
+footer strong {
+    margin: auto;
+}
+
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    width: 100%;
+    text-align: center;
+}
+
+/*--CELULAR E TABLET--*/
+
+@media (max-width: 1024px) {
+
+    .pipa img,
+    .jericoacoara img,
+    .itacare img {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    footer p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .praias {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .porto img,
+    .pipa img,
+    .jericoacoara img,
+    .itacare img {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .informacoes {
+        margin: 20px 0;
+        padding: 20px;
+        text-align: center;
+    }
+}
